@@ -1,0 +1,341 @@
+/*Start Global rules*/
+*{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #eee;
+    color: #222;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    
+}
+ul{
+    list-style-type: none;
+}
+.content{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*End global rules*/
+/* start header */
+nav{
+    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    animation-name: chose;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+nav:hover{
+    animation-play-state: running;
+}
+@keyframes chose{
+    10%{
+    background-image: linear-gradient( 109.6deg, #e5c1cd, #f3dbcf);
+    }
+    20%{
+    background-image: linear-gradient( 109.6deg, rgb(252, 156, 239) 11.2%, rgb(251, 110, 180) 91.1% );
+    }
+    30%{
+        background-image: linear-gradient( 109.6deg, #ff9190, #fdc094 );
+        }
+    40%{
+        background-image: linear-gradient( 109.6deg, #f8d90f, #d3dd18 );
+    }
+    50%{
+        background-image: linear-gradient( 109.6deg, #ffb2bf, #ce4a87 );
+    }
+    60%{
+        background-image: linear-gradient( 109.6deg, #a987a8, #ecd4ea );
+    }
+    70%{
+        background-image: linear-gradient( 109.6deg, #aac9ce, #b6b4c2 );
+    }
+    80%{
+        background-image: linear-gradient( 109.6deg, #35bbca, #0191b4 );
+    }
+    90%{
+        background-image: linear-gradient( 109.6deg, rgb(28, 224, 149) 11.2%, rgb(110, 246, 251) 91.1% );
+    }
+}
+.title{
+    font-weight: bold;
+}
+.eff1, .eff2, .eff3, .eff4{
+    transition: .5s;
+}
+.eff1:hover{
+    text-decoration: underline 5px #e3e2df;
+    text-decoration-style: wavy;
+    transform: translateY(-10px);
+}
+.eff2:hover{
+    text-decoration: underline 5px #e3afbc;
+    text-decoration-style: wavy;
+    transform: translateY(-10px);
+}
+.eff3:hover{
+    text-decoration: underline 5px #9a1750;
+    text-decoration-style: wavy;
+    transform: translateY(-10px);
+}
+.eff4:hover{
+    text-decoration: underline 5px #ee4c7c;
+    text-decoration-style: wavy;
+    transform: translateY(-10px);
+}
+/* end header */
+/* start back */
+section .back{
+    height: 100vh;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CFFF4E'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23FFA1FC'/%3E%3Cstop offset='1' stop-color='%2385FBFF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(-107.1 0.40000000000000213) rotate(-6.199999999999999 1409 581) scale(0.909324)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='translate(-151.5 87) rotate(4.6 800 450) scale(1.000538)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(9.5 -67.5) rotate(24.5 401 736) scale(1.000538)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(522 8.2) rotate(-2.05 150 345) scale(0.9971079999999999)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='translate(-111.5 -239) rotate(3.5999999999999943 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-281.2 70.8) rotate(0.5999999999999979 1400 132) scale(0.785)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+section .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back h1{
+    margin: 20px auto;
+    color: #333;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(pink, blueviolet,aqua,orchid);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1.5s;
+}
+.back p{
+    font-size: 1.2rem;
+    color: rgb(131, 131, 131);
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+}
+.back h1:hover{
+    transform: scale(1.1);
+}
+/* end back */
+/* start content*/
+.half-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.half-cont h2{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#57bbce, #f2f2f4, #ca5135);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+.half-cont p{
+    text-align: center;
+}
+.half-img .image{
+    width: 100%;
+    position: relative;
+    border: 1px transparent solid;
+}
+.half-img .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* end content */
+/* start slide */
+.life{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#c9bbc8, #e5c1cd, #f3dbcf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+.text-life{
+    font-size: 1rem;
+    color: #333;
+    text-transform: capitalize;
+}
+.text-in{
+    font-family: fantasy;
+}
+/* end slide */
+/* start card */
+.title-card{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#ff0000, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px;
+}
+.card-flip > div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    transition: 1.5s;
+  }
+  
+  .card-front {
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    transition: 1.5s;
+  }
+  
+  .card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+    
+  .card-flip:hover .card-back {
+    transform: rotateY(0deg);
+  }
+/* end card */
+/* start footer */
+footer{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-color: #3586ff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+  }
+  footer .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  footer .menu li{
+    list-style: none;
+  }
+  footer .menu li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transform: 0.5;
+    opacity: 0.5;
+  }
+  footer .menu li a :hover{
+    opacity: 1;
+  }
+  footer p{
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  footer p span{
+      font-size: 20px;
+      cursor: pointer;
+  }
+  footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('../img/wave.png');
+    background-size: 1000px 100px;
+  }
+  footer .wave#wave1{
+    opacity: 1;
+    z-index: 1000;
+    bottom: 0;
+    animation: animateWave 4s linear infinite ;
+  
+  }
+  footer .wave#wave2{
+    opacity: 0.5;
+    z-index: 999;
+    bottom: 15px;
+    animation: animateWave_02 4s linear infinite ;
+  }
+  footer .wave#wave3{
+    opacity: 0.2;
+    z-index: 1000;
+    bottom: 0;
+    animation: animateWave 3s linear infinite ;
+  
+  }
+  footer .wave#wave4{
+    opacity: 0.7;
+    z-index: 999;
+    bottom: 20px;
+    animation: animateWave_02 3s linear infinite ;
+  
+  }
+  @keyframes animateWave {
+  
+    0%{
+      background-position-x: 1000px;
+    }
+    100%{
+      background-position-x: 0px;
+    }
+  }
+  @keyframes animateWave_02 {
+  
+    0%{
+      background-position-x: 0px;
+    }
+    100%{
+      background-position-x: 1000px;
+    }
+  }
+/* end footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
